@@ -13,12 +13,13 @@ export class ReleaseDateComponent implements OnInit {
   month: number;
   day: number;
   constructor() { 
-    this.year = this.releasedate.getFullYear();
-    this.month = this.releasedate.getMonth();
-    this.day = this.releasedate.getDate();
+
   }
 
   ngOnInit() {
+    this.year = this.releasedate.getFullYear();
+    this.month = this.releasedate.getMonth();
+    this.day = this.releasedate.getDate();
   }
 
 }

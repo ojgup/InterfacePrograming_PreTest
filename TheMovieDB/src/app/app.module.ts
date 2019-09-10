@@ -10,6 +10,7 @@ import { TitleComponent } from './title/title.component';
 import { RuntimeComponent } from './runtime/runtime.component';
 import { RatingComponent } from './rating/rating.component';
 import { ReleaseDateComponent } from './release-date/release-date.component';
+import { ShortDescriptionComponent } from './short-description/short-description.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ReleaseDateComponent } from './release-date/release-date.component';
     TitleComponent,
     RuntimeComponent,
     RatingComponent,
-    ReleaseDateComponent
+    ReleaseDateComponent,
+    ShortDescriptionComponent
   ],
   imports: [
     BrowserModule

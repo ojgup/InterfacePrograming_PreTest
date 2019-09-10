@@ -3,11 +3,20 @@
     <app-movie-thumbnail [url]="MovieThumbnail"></app-movie-thumbnail>
   </div>
   
-  <div class="generalInfo">
-    <app-title [title]="Title"></app-title>
-    <app-runtime [RunTime]="RunTime"></app-runtime>
-    <app-rating [rating]="Rating"></app-rating>
-    <app-release-date [releasedate]="ReleaseDate"></app-release-date>
+  <div>
+      <div class="generalInfo">
+          <app-title [title]="Title"></app-title>
+          <app-runtime [RunTime]="RunTime"></app-runtime>
+          <app-rating [rating]="Rating"></app-rating>
+          
+        </div>
+      <div class="additionalInfo">
+          <app-release-date [releasedate]="ReleaseDate"></app-release-date>
+          <app-short-description [shortdescription]="ShortDescription"></app-short-description>
+      </div>
+
   </div>
 
+
+  
 </div>
