@@ -10,7 +10,7 @@ export class MovieInfoComponentComponent implements OnInit {
   @Input() Title: string;
   @Input() Rating: number;
   @Input() ShortDescription: string;
-  @Input() Runtime: number;
+  @Input() RunTime: number;
   @Input() ReleaseDate: Date;
   @Input() MovieThumbnail: string;
   

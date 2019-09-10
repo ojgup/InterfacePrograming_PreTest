@@ -6,3 +6,8 @@
 .thumbnail{
     padding-left: 300px;
 }
+.generalInfo{
+    display: flex;
+    padding-left: 50px;
+}
+

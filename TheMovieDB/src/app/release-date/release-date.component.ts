@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-release-date',
@@ -6,8 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./release-date.component.css']
 })
 export class ReleaseDateComponent implements OnInit {
+  
+  @Input() releasedate: Date;
 
-  constructor() { }
+  year: number;
+  month: number;
+  day: number;
+  constructor() { 
+    this.year = this.releasedate.getFullYear();
+    this.month = this.releasedate.getMonth();
+    this.day = this.releasedate.getDate();
+  }
 
   ngOnInit() {
   }
